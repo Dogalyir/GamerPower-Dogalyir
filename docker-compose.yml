@@ -7,9 +7,8 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - power_data:/usr/src/app/power.sqlite
+      - power_data:/usr/src/app/db/mount
 
 
 volumes:
   power_data:
-    name: gamerpower_data
