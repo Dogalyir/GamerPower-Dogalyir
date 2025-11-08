@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1762576479543,
+      "tag": "0000_swift_fat_cobra",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1762578421056,
+      "tag": "0001_mushy_smasher",
+      "breakpoints": true
+    }
+  ]
+}

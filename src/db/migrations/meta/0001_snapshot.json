@@ -1,0 +1,57 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "e06c0ceb-92ce-4256-a5a8-0559b4745695",
+  "prevId": "67a46a67-a324-4886-bd16-80d0bd2875e2",
+  "tables": {
+    "gamer_table": {
+      "name": "gamer_table",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "gamer_table_id_unique": {
+          "name": "gamer_table_id_unique",
+          "columns": [
+            "id"
+          ],
+          "isUnique": true
+        },
+        "gamer_index": {
+          "name": "gamer_index",
+          "columns": [
+            "id"
+          ],
+          "isUnique": false
+        },
+        "gamer_unique": {
+          "name": "gamer_unique",
+          "columns": [
+            "id"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}
