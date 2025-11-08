@@ -7,4 +7,4 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - ${DB_FILE_NAME}:/usr/src/app/${DB_FILE_NAME}
+      - ${DB_FILE}:/usr/src/app/power.sqlite
