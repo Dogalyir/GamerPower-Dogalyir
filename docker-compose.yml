@@ -7,4 +7,9 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - ${DB_FILE}:/usr/src/app/power.sqlite
+      - power_data::/usr/src/app/power.sqlite
+
+
+volumes:
+  power_data:
+    name: gamerpower_data
