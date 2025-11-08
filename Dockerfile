@@ -7,6 +7,5 @@ COPY . .
 
 RUN bun db:migrate
 
-USER bun
 ENTRYPOINT ["bun"]
 CMD ["index.ts"]
