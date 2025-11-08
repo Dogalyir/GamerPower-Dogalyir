@@ -1,8 +1,10 @@
 services:
-  monster:
+  telegrampower:
     build: .
     restart: always
     env_file:
       - stack.env
     environment:
       - NODE_ENV=production
+    volumes:
+      - ${DB_FILE_NAME}:/usr/src/app/${DB_FILE_NAME}
