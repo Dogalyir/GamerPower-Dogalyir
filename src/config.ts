@@ -1,1 +1,1 @@
-export const DB_FILE = "db/mount/power.sqlite";
+export const DB_FILE = "mount/power.sqlite";
