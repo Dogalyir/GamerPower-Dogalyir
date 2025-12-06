@@ -1,6 +1,7 @@
 import type { FilterGames } from "./src/api-gamer";
 import { db } from "./src/db";
 import { GamerTable } from "./src/db/db-schemas";
+import { startNequiMonitoring } from "./src/nequi-monitor";
 
 const urlGamer = new URL("https://www.gamerpower.com/api/filter");
 urlGamer.searchParams.set("platform", "epic-games-store.steam");
@@ -54,3 +55,12 @@ async function main() {
 await main();
 
 setInterval(() => main().then(), 3600000);
+
+// Start Nequi monitoring if NEQUI environment variable is set
+if (process.env.NEQUI) {
+  console.log("🔍 Variable NEQUI detectada, iniciando monitoreo de Nequi...");
+  await startNequiMonitoring(process.env.NEQUI);
+} else {
+  console.log("ℹ️  Variable NEQUI no detectada, monitoreo de Nequi desactivado");
+}
+
