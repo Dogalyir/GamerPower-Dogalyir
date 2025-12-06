@@ -2,6 +2,7 @@ import type { FilterGames } from "./src/api-gamer";
 import { db } from "./src/db";
 import { GamerTable } from "./src/db/db-schemas";
 import { startNequiMonitoring } from "./src/nequi-monitor";
+import "./src/db/migrate";
 
 const urlGamer = new URL("https://www.gamerpower.com/api/filter");
 urlGamer.searchParams.set("platform", "epic-games-store.steam");
